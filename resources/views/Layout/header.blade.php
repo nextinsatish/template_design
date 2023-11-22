@@ -37,14 +37,35 @@
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     {{-- ==============select2 link========= --}}
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css">
-  
-  
+    {{-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css"> --}}
+    {{-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> --}}
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" /> --}}
+
+
+
 
 
 
     {{-- <link rel="stylesheet" href="https://admin.nextems.co.in/nems/css/custom.css"> --}}
 
+    <style>
+        .select2-selection__rendered {
+            line-height: 31px !important;
+            
+        }
+
+        .select2-container .select2-selection--single {
+            height: 35px !important;
+            
+
+        }
+
+        .select2-selection__arrow {
+            height: 34px !important;
+        }
+    </style>
     @yield('css')
     <!-- =======================================================
   * Template Name: NiceAdmin

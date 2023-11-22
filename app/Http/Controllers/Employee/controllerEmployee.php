@@ -9,14 +9,14 @@ class controllerEmployee extends Controller
 {
     public function index(Request $request)
     {
-        return view('Employee.index');
+        return view('Employee.Employee.index');
     }
     public function create(Request $request)
     {
-        return view('Employee.Create');
+        return view('Employee.Employee.Create');
     }
     public function update(Request $request)
     {
-        return view('Employee.Update');
+        return view('Employee.Employee.Update');
     }
 }

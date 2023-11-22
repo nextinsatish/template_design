@@ -3,12 +3,12 @@
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1><i class="fas fa-plus text-muted me-2"></i>School Create</h1>
+            <h1><i class="fas fa-edit text-muted me-2"></i> School Manage</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="/Masters/School/index">School</a></li>
-                    <li class="breadcrumb-item active">Create</li>
+                    <li class="breadcrumb-item active">Manage</li>
                 </ol>
             </nav>
         </div>
@@ -26,20 +26,9 @@
                             </div>
                         </div>
                         <div class="card-body p-4">
-                            <form action="#" method="post" enctype="multipart/form-data">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="upload_excel" class="form-label mb-0">Upload Excel</label>
-                                        <input type="file" class="form-control" name="upload_excel">
-                                    </div>
-                                    <div class="col-md-6 px-0">
-                                        <input type="submit" value="Upload" class="btn btn-outline-success mt-4">
-                                    </div>
-                                </div>
-                            </form>
 
                             {{-- =========================================================== --}}
-                            <form action="3" class="row g-3 mt-1" method="post">
+                            <form action="3" class="row g-3" method="post">
                                 <div class="col-md-6 mb-2">
                                     <label for="school_name" class="form-label">School Name <sup
                                             class="text-danger">*</sup></label>
@@ -62,10 +51,31 @@
                                         name="mobile">
                                 </div>
                                 <div class="col-md-3 mb-2">
+                                    <label for="alt_mobile" class="form-label">Alternate Mobile</label>
+                                    <input type="text" class="form-control" placeholder="Enter School Mobile"
+                                        name="alt_mobile">
+                                </div>
+                                <div class="col-md-3 mb-2">
                                     <label for="emailID" class="form-label">School Email ID</label>
                                     <input type="email" class="form-control" placeholder="Enter School Email ID"
                                         name="emailID">
                                 </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="number_of_students" class="form-label">Total Students</label>
+                                    <input type="text" class="form-control" placeholder="Enter Number of Students"
+                                        name="number_of_students">
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="number_of_teachers" class="form-label">Total Staff</label>
+                                    <input type="text" class="form-control" placeholder="Enter Number of Teachers"
+                                        name="number_of_teachers">
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="number_of_branches" class="form-label">Total Branches</label>
+                                    <input type="text" class="form-control" placeholder="Enter Number of Branches"
+                                        name="number_of_branches">
+                                </div>
+
                                 <div class="col-md-3 mb-2">
                                     <label for="latitude" class="form-label">Latitude<sup
                                             class="text-danger">*</sup></label>
@@ -77,6 +87,34 @@
                                     <input type="text" class="form-control" placeholder="Enter Longitude"
                                         name="longitude">
                                 </div>
+
+                                <div class="row g-3">
+                                <div class="col-md-3 mb-2">
+                                    <label for="is_having_website">Is having website?</label>
+                                    <select name="is_having_website" id="is_having_website" class="form-select">
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 is_having_website mb-2" style="display: none">
+                                    <label for="is_having_website">Website Link</label>
+                                    <input type="url" class="form-control" placeholder="Enter Website">
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="is_having_other_software">Is having other software?</label>
+                                    <select name="is_having_other_software" id="is_having_other_software"
+                                        class="form-select">
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 mb-2 is_having_other_software" style="display: none">
+                                    <label for="is_having_other_software">Software Name</label>
+                                    <input type="text" placeholder="Enter Website" class="form-control">
+                                </div>
+                            </div>
+
+
                                 <div class="col-md-6 mb-2">
                                     <label for="line1" class="form-label">Address Line 1<sup
                                             class="text-danger">*</sup></label>
@@ -92,7 +130,6 @@
                                 <div class="col-md-3 mb-2">
                                     <label for="state_id" class="form-label">Select State<sup
                                             class="text-danger">*</sup></label>
-                                    
                                     <select id="state_id" name="state_id" class="form-select">
                                         <option value="">Select state</option>
                                         <option value="AN">Andaman and Nicobar Islands</option>
@@ -102,7 +139,6 @@
                                 <div class="col-md-3 mb-2">
                                     <label for="city_id" class="form-label">Select City<sup
                                             class="text-danger">*</sup></label>
-                                    
                                     <select id="city_id" name="city_id" class="form-select">
                                         <option value="" selected>Select</option>
                                         <option value="Abrama">Abrama</option>
@@ -122,12 +158,20 @@
                                     <label for="area_id" class="form-label">Select Area<sup
                                             class="text-danger">*</sup></label>
                                     <select name="area_id" id="area_id" class="form-select">
-                                        <option value="" selected>Select</option>
-                                        <option value="">Gondal</option>
+                                        <option value="1">Select</option>
+                                        <option value="Gondal">Gondal</option>
+                                        <option value="Virpur">Virpur</option>
+                                        <option value="lodhika">lodhika</option>
+                                        <option value="anandpar">anandpar</option>
+                                        <option value="amreli">amreli</option>
+                                        <option value="junagadh">junagadh</option>
+                                        <option value="rajkot">rajkot</option>
+                                        <option value="ko.saghani">ko.saghani</option>
+                                        <option value="ribda">ribda</option>
                                     </select>
                                 </div>
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn btn-primary btn-md">Save</button>
+                                    <button type="submit" class="btn btn-primary btn-md">Update</button>
                                 </div>
                             </form>
                         </div>
@@ -138,11 +182,46 @@
 
     </main>
 @endsection
+@section('css')
+    <style>
+        form label {
+            color: #5b5b60;
+            font-weight: bold;
+        }
+    </style>
+@endsection
 @section('script')
-<script>
-    $('#state_id,#city_id,#headquarter_id,#area_id').select2({
-        placeholder: "Select Options",
-    });
-    
-</script>
+    <script>
+        $("#state_id,#city_id,#area_id,#headquarter_id").select2({
+            placeholder: "Select Options",
+        });
+
+
+        is_having_website_fun($("#is_having_website").val());
+
+        function is_having_website_fun(param) {
+            if (param == "Yes") {
+                $(".is_having_website").show('slow/400');
+            } else {
+                $(".is_having_website").hide('slow/400');
+            }
+        }
+
+        $("#is_having_website").change(function() {
+            is_having_website_fun($(this).val());
+        });
+        // ==============================================================//
+        is_having_other_software_fun($("#is_having_other_software").val());
+
+        function is_having_other_software_fun(param) {
+            if (param == "Yes") {
+                $(".is_having_other_software").show('slow/400');
+            } else {
+                $(".is_having_other_software").hide('slow/400');
+            }
+        }
+        $("#is_having_other_software").change(function() {
+            is_having_other_software_fun($(this).val());
+        });
+    </script>
 @endsection

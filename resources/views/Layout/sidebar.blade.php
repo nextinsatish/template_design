@@ -58,29 +58,30 @@
         <ul id="master" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="/Masters/School/index">
-              <i class="fas fa-regular fa-school"></i><span>Schools</span>
+              <i class="fas fa-regular fa-school" style="font-size:15px;"></i><span>Schools</span>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fas fa-regular fa-cubes"></i><span>Headquater</span>
+            <a href="/Masters/Headquarter/index">
+              <i class="fas fa-regular fa-cubes" style="font-size:15px;"></i><span>Headquater</span>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fas fa-regular fa-city"></i><span>Area</span>
+            <a href="/Masters/Area/index">
+              <i class="fas fa-regular fa-city" style="font-size:15px;"></i><span>Area</span>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fas fa-regular fa-city"></i><span>City</span>
+            <a href="/Masters/State/index">
+              <i class="fas fa-regular fa-city" style="font-size:15px;"></i><span>State</span>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fas fa-regular fa-city"></i><span>State</span>
+            <a href="/Masters/City/index">
+              <i class="fas fa-regular fa-city" style="font-size:15px;"></i><span>City</span>
             </a>
           </li>
+          
         </ul>
       </li>
 
@@ -92,13 +93,13 @@
         </a>
         <ul id="Employee" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="#">
-              <i class="fas fa-regular fa-tasks"></i><span>My Task</span>
+            <a href="/Employee/myTask/index">
+              <i class="fas fa-regular fa-tasks" style="font-size:15px;"></i><span>My Task</span>
             </a>
           </li>
           <li>
-            <a href="/Employee/index">
-              <i class="fas fa-regular fa-users"></i><span>Employees</span>
+            <a href="/Employee/Employee/index">
+              <i class="fas fa-regular fa-users" style="font-size:15px;"></i><span>Employees</span>
             </a>
           </li>
         </ul>

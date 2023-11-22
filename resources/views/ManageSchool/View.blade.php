@@ -12,30 +12,25 @@
                 </ol>
             </nav>
         </div><!-- End Page Title -->
-        <section class="section">
+        <section id="section">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card border-top border-primary border-3">
                         <div class="card-header">
-                            <p class="m-0 float-start text-dark" style="font-size: 20px;">Next Innovation School -NEMS0002</p>
+                            <p class="m-0 float-start text-dark" style="font-size: 20px;">Next Innovation School -NEMS0002
+                            </p>
                             <div class="float-end">
 
-                                <button type="button" class="btn px-1"><i class="fas fa-edit text-primary"></i></button>
-                                <button type="button" class="btn px-1" title="remove"><i
+                                <a href="/ManageSchool/Edit" class="btn px-1" title="Edit"><i
+                                        class="fas fa-edit text-primary"></i></a>
+                                <button type="button" class="btn px-1" title="change Password"><i
                                         class="fas fa-key text-info"></i></button>
-                                <button type="button" class="btn px-1 fadeout" title="remove"><i
+                                <button type="button" class="btn px-1" id="slidetoggle" title="remove"><i
                                         class="fas fa-times text-warning"></i></button>
                                 <button type="button" class="btn px-1" title="remove"><i
                                         class="fas fa-trash text-danger"></i></button>
                                 <button type="button" class="btn px-1" onclick="window.history.back(-1);" title="remove"><i
                                         class="fas fa-arrow-alt-circle-left text-secondary"></i></button>
-
-
-                                {{-- <a href="#">
-                                    <i class="fas fa-trash text-danger"></i>
-                                </a> --}}
-
-
                             </div>
                         </div>
                         <div class="card-body">
@@ -133,7 +128,7 @@
                                     <div class="row">
                                         <h3 class="text-primary"><i class="fas fa-paint-brush"></i> School Description</h3>
                                         <p class="text-muted">
-                                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam earum libero
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam earum libero
                                             qui
                                             enim minus a, fugit quis totam molestiae modi. Lorem ipsum dolor sit amet
                                             consectetur adipisicing elit. Nam, harum eaque.
@@ -141,24 +136,30 @@
                                         <br>
                                         <div class="text-muted mt-2">
                                             <p><small>Contact Person<b class="d-block">Hirenbhai Kathiriya</b></small></p>
-                                                <p><small>Designation<b class="d-block">-</b></small></p>
-                                            
+                                            <p><small>Designation<b class="d-block">-</b></small></p>
+
                                         </div>
                                         <h5 class="mt-5 text-muted">School Documents</h5>
                                         <ul style="list-style-type:none">
-                                            <li><a href="#" class="btn btn-link text-secondary"><i class="far fa-fw fa-file-word"></i>Functional-requirements.docx</a></li>
-                                            <li><a href="#" class="btn btn-link text-secondary"><i class="far fa-fw fa-file-pdf"></i>
-                                                utd.pdf
-                                            </a></li>
-                                            <li><a href="#" class="btn btn-link text-secondary"><i class="far fa-fw fa-envelope"></i>
-                                            Email-from-flatbal.mln
-                                        </a></li>
-                                        <li><a href="#" class="btn btn-link text-secondary"><i class="far fa-fw fa-image"></i>
-                                                Logo.png
+                                            <li><a href="#" class="btn btn-link text-secondary"><i
+                                                        class="far fa-fw fa-file-word"></i>Functional-requirements.docx</a>
+                                            </li>
+                                            <li><a href="#" class="btn btn-link text-secondary"><i
+                                                        class="far fa-fw fa-file-pdf"></i>
+                                                    utd.pdf
                                                 </a></li>
-                                                <li><a href="#" class="btn btn-link text-secondary"><i class="far fa-fw fa-file-word"></i>
-                                                Contract-10_12_2014.docx
-                                                    </a></li>
+                                            <li><a href="#" class="btn btn-link text-secondary"><i
+                                                        class="far fa-fw fa-envelope"></i>
+                                                    Email-from-flatbal.mln
+                                                </a></li>
+                                            <li><a href="#" class="btn btn-link text-secondary"><i
+                                                        class="far fa-fw fa-image"></i>
+                                                    Logo.png
+                                                </a></li>
+                                            <li><a href="#" class="btn btn-link text-secondary"><i
+                                                        class="far fa-fw fa-file-word"></i>
+                                                    Contract-10_12_2014.docx
+                                                </a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -181,15 +182,16 @@
         #create_school_form label {
             font-weight: bold;
         }
-        ul li a{
-            padding:0px 12px !important;
+
+        ul li a {
+            padding: 0px 12px !important;
         }
     </style>
 @endsection
 @section('script')
-<script>
-    $("body").delegate('.fadeout',"click",function(){
-        $("section").slideToggle(700);
-    });
-</script>
+    <script>
+        $("#slidetoggle").click(function() {
+            $("section").slideToggle(900);
+        });
+    </script>
 @endsection

@@ -20,17 +20,15 @@
                         <div class="card-header p-3">
                             <p class="m-0 float-start">Employee Details</p>
                             <div class="float-end">
-                                <a href="/Employee/index">
+                                <a href="/Employee/Employee/index">
                                     <i class="fas fa-arrow-alt-circle-left text-dark"></i>
                                 </a>
-                                
-                            
                             </div>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Note: if you do not have data of mandatory filed, please add "-"</h5>
 
-                           
+
                             <form class="animate__animated animate__fadeInLet" style="animation-duration: 1.5s;">
                                 <div class="row g-2">
                                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
@@ -71,7 +69,8 @@
                                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                                         <label for="gender" class="form-label">Gender&nbsp;<span
                                                 class="text-danger">*</span></label>
-                                        <select class="form-select" name="gender" id="gender" aria-label="Default select example">
+                                        <select class="form-select" name="gender" id="gender"
+                                            aria-label="Default select example">
                                             <option selected>Select</option>
                                             <option value="1">Male</option>
                                             <option value="2">Female</option>
@@ -85,13 +84,14 @@
                                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                                         <label for="emergency_contact" class="form-label">Emergency Contact No.&nbsp;<span
                                                 class="text-danger">*</span></label>
-                                        <input type="number" class="form-control" id="emergency_contact" name="emergency_contact"
-                                            placeholder="Enter Emergency Contact No.">
+                                        <input type="number" class="form-control" id="emergency_contact"
+                                            name="emergency_contact" placeholder="Enter Emergency Contact No.">
                                     </div>
                                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                                         <label for="blood_group" class="form-label">Blood Group&nbsp;<span
                                                 class="text-danger">*</span></label>
-                                        <select class="form-select" id="blood_group" name="blood_group" aria-label="Default select example">
+                                        <select class="form-select" id="blood_group" name="blood_group"
+                                            aria-label="Default select example">
                                             <option selected>Select</option>
                                             <option value="1">A-</option>
                                             <option value="2">A+</option>
@@ -106,7 +106,8 @@
                                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                                         <label for="marital_status" class="form-label">Marital Status&nbsp;<span
                                                 class="text-danger">*</span></label>
-                                        <select class="form-select" id="marital_status" name="marital_status" aria-label="Default select example">
+                                        <select class="form-select" id="marital_status" name="marital_status"
+                                            aria-label="Default select example">
                                             <option selected>Select</option>
                                             <option value="Married">Married</option>
                                             <option value="Unmarried">Unmarried</option>
@@ -118,7 +119,8 @@
                                     </div>
                                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                                         <label for="reporting_to" class="form-label">Reporting To</label>
-                                        <select class="form-select" id="reporting_to" name="reporting_to" aria-label="Default select example">
+                                        <select class="form-select" id="reporting_to" name="reporting_to"
+                                            aria-label="Default select example">
                                             <option selected>Select</option>
                                             <option value="Akshay Maheta">Akshay Maheta</option>
                                             <option value="Abhay Shah">Abhay Shah</option>
@@ -131,16 +133,16 @@
                                         <div class="form-group">
                                             <label for="qualification" class="form-label">Qualification&nbsp;<span
                                                     class="text-danger">*</span></label>
-                                            <textarea class="form-control" name="qualification" id="qualification" placeholder="Enter Qualification" id="" rows="2"
-                                                style="resize: none;"></textarea>
+                                            <textarea class="form-control" name="qualification" id="qualification" placeholder="Enter Qualification"
+                                                id="" rows="2" style="resize: none;"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-md-6 col-sm-12">
                                         <div class="form-group">
                                             <label for="work_experience" class="form-label">Work Experience&nbsp;<span
                                                     class="text-danger">*</span></label>
-                                            <textarea class="form-control" id="work_experience" name="work_experience" placeholder="Enter Work Experience" id="" rows="2"
-                                                style="resize: none;"></textarea>
+                                            <textarea class="form-control" id="work_experience" name="work_experience" placeholder="Enter Work Experience"
+                                                id="" rows="2" style="resize: none;"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -197,98 +199,119 @@
                                         <div class="form-group">
                                             <label for="current_address" class="form-label">Current Address&nbsp;<span
                                                     class="text-danger">*</span></label>
-                                            <textarea class="form-control" placeholder="Enter Current Address" name="current_address" id="current_address" rows="2"
-                                                style="resize: none;"></textarea>
+                                            <textarea class="form-control" placeholder="Enter Current Address" name="current_address" id="current_address"
+                                                rows="2" style="resize: none;"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-md-6 col-sm-12">
                                         <div class="form-group">
-                                            <label for="permenent_address" class="form-label float-start">Permenent Address&nbsp;<span
-                                                    class="text-danger">*</span></label>
+                                            <label for="permenent_address" class="form-label float-start">Permenent
+                                                Address&nbsp;<span class="text-danger">*</span></label>
                                             <span class="badge bg-success float-end">Same as Current Address</span>
-                                            <textarea class="form-control" placeholder="Enter Permenent Address" name="permenent_address" id="permenent_address" rows="2"
-                                                style="resize: none;"></textarea>
+                                            <textarea class="form-control" placeholder="Enter Permenent Address" name="permenent_address" id="permenent_address"
+                                                rows="2" style="resize: none;"></textarea>
                                         </div>
                                     </div>
                                 </div>
 
-                                
-                                    <div class="col-12">
-                                        <div class="accordion card shadow-none"  id="accordionExample">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button bg-success text-white" type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#collapseOne" aria-expanded="true"
-                                                        aria-controls="collapseOne">
-                                                        Other Details
-                                                    </button>
-                                                </h2>
-                                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                                    data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body p-3">
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <div class="card shadow">
-                                                                    <div class="card-header" style="background-color: antiquewhite !important;">
-                                                                        <p class="m-0 text-dark">Payroll</p>
-                                                                    </div>
-                                                                    <div class="card-body p-4">
-                                                                       <div class="row">
+
+                                <div class="col-12">
+                                    <div class="accordion card shadow-none" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button bg-success text-white" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Other Details
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="card shadow">
+                                                                <div class="card-header"
+                                                                    style="background-color: antiquewhite !important;">
+                                                                    <p class="m-0 text-dark">Payroll</p>
+                                                                </div>
+                                                                <div class="card-body p-4">
+                                                                    <div class="row">
                                                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                                                            <label for="epf_no" class="form-label">EPF No</label>
-                                                                            <input type="text" class="form-control" id="epf_no" name="epf_no">
+                                                                            <label for="epf_no" class="form-label">EPF
+                                                                                No</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="epf_no" name="epf_no">
                                                                         </div>
                                                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                                                            <label for="basic_salary" class="form-label">Basic Salary
+                                                                            <label for="basic_salary"
+                                                                                class="form-label">Basic Salary
                                                                             </label>
-                                                                            <input type="text" class="form-control" name="basic_salary" id="basic_salary">
+                                                                            <input type="text" class="form-control"
+                                                                                name="basic_salary" id="basic_salary">
                                                                         </div>
                                                                         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                                                            <label for="contract_type" class="form-label">Contract Type
+                                                                            <label for="contract_type"
+                                                                                class="form-label">Contract Type
                                                                             </label>
-                                                                            <select class="form-select" id="contract_type" name="contract_type" aria-label="Default select example">
+                                                                            <select class="form-select" id="contract_type"
+                                                                                name="contract_type"
+                                                                                aria-label="Default select example">
                                                                                 <option selected>Select</option>
                                                                                 <option value="1">Permanent</option>
                                                                                 <option value="1">Probation</option>
-                                                                               
+
                                                                             </select>
                                                                         </div>
 
-                                                                       </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-12">
-                                                                <div class="card shadow">
-                                                                    <div class="card-header" style="background-color: lavender !important;"><p class="m-0 text-dark">Bank Account Details</p>
-                                                                    </div>
-                                                                    <div class="card-body p-4">
-                                                                        <div class="row">
-                                                                           
-                                                                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                                                                                <label for="account_title" class="form-label">Account Title</label>
-                                                                                <input type="text" class="form-control" id="account_title" name="account_title">
-                                                                            </div>
-                                                                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                                                                                <label for="bank_account_no" class="form-label">Bank Account Number</label>
-                                                                                <input type="text" class="form-control" id="bank_account_no" name="bank_account_no">
-                                                                            </div>
-                                                                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                                                                                <label for="bank_name" class="form-label">Bank Name</label>
-                                                                                <input type="text" class="form-control" id="bank_name" name="bank_name">
-                                                                            </div>
-                                                                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                                                                                <label for="ifsc_code" class="form-label">IFSC Code</label>
-                                                                                <input type="text" class="form-control" id="ifsc_code" name="ifsc_code">
-                                                                            </div>
-                                                                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                                                                                <label for="branch_name" class="form-label">Bank Branch Name</label>
-                                                                                <input type="text" class="form-control" id="branch_name" name="branch_name">
-                                                                            </div>
-                                                                            
-                                                                        
-                                                                        
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="card shadow">
+                                                                <div class="card-header"
+                                                                    style="background-color: lavender !important;">
+                                                                    <p class="m-0 text-dark">Bank Account Details</p>
+                                                                </div>
+                                                                <div class="card-body p-4">
+                                                                    <div class="row">
+
+                                                                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                                                            <label for="account_title"
+                                                                                class="form-label">Account Title</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="account_title" name="account_title">
                                                                         </div>
+                                                                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                                                            <label for="bank_account_no"
+                                                                                class="form-label">Bank Account
+                                                                                Number</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="bank_account_no"
+                                                                                name="bank_account_no">
+                                                                        </div>
+                                                                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                                                            <label for="bank_name" class="form-label">Bank
+                                                                                Name</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="bank_name" name="bank_name">
+                                                                        </div>
+                                                                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                                                            <label for="ifsc_code" class="form-label">IFSC
+                                                                                Code</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="ifsc_code" name="ifsc_code">
+                                                                        </div>
+                                                                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                                                            <label for="branch_name"
+                                                                                class="form-label">Bank Branch Name</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="branch_name" name="branch_name">
+                                                                        </div>
+
+
+
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -298,7 +321,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                
+                                </div>
+
 
                                 <div class="">
                                     <button type="submit" class="btn btn-success">Submit</button>

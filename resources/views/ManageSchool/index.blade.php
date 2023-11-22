@@ -63,7 +63,7 @@
                         <div class="card-header">
                             <h5 class="p-0 text-dark">School List</h5>
                         </div>
-                        <div class="card-body mt-2">
+                        <div class="card-body mt-2" style="overflow:auto !important;">
 
                             {{-- <p>Add lightweight datatables to your project with using the <a
                                     href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple
@@ -71,7 +71,7 @@
                                 wish to conver to a datatable</p> --}}
 
                             <!-- Table with stripped rows -->
-                            <table class="table table-bordered tetx-center datatable" id="datatable">
+                            <table class="table table-bordered" id="datatable">
                                 <thead>
                                     <tr>
                                         <th>Sr#</th>
@@ -196,7 +196,7 @@
             display: none;
         }
 
-            {}
+            
 
         /* .con{
                     
@@ -209,12 +209,10 @@
 @section('script')
     <script>
         $(document).ready(function() {
-            $('.datatable').dataTable({
+            $('#datatable').dataTable({
 
-
-
-            });
-            $("tr.hideme").css({"display" : "none"});
+        });
+            // $("tr.hideme").css({"display" : "none"});
             // $("tr").append('<tr><td>as</td><td>as</td><td>as</td><td>as</td><td>as</td><td>as</td><td>as</td><td>as</td></tr>');
             // let table=new DataTable('#datatable');    
 

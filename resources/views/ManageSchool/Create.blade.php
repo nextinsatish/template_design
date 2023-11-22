@@ -47,7 +47,7 @@
                                     </div>
                                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-2">
                                         <label for="scholl_mobile" class="form-label">School Mobile</label>
-                                        <input type="number" class="form-control" id="scholl_mobile" name="scholl_mobile"
+                                        <input type="text" class="form-control" id="scholl_mobile" name="scholl_mobile"
                                             placeholder="Enter School Mobile">
                                     </div>
                                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-2">
@@ -105,8 +105,8 @@
 @section('css')
 <style>
    #create_school_form label{
-        font-weight: bold;
-        color: #5b5b60;
+        /* font-weight: bold; */
+        /* color: #5b5b60; */
         
     }
 </style>
